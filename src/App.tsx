@@ -1,14 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 import html2canvas from 'html2canvas'
 const wait = (ms: any) => new Promise((res) => setTimeout(res, ms))
 
 const Kettle = (props: any) => {
-  const captureRef = useRef(null); // Reference to the element to capture
-
   const canvasRef: any = useRef(null);
   // const canvasRef: any = useRef(null);
   const [mixing, setMixing] = useState(false);
